@@ -1,0 +1,42 @@
+{
+	"name": "fewo-site-sveltekit",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"prebuild": "cd generators/fonts && ./fonts",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^2.0.3",
+		"@sveltejs/kit": "^1.25.1",
+		"@twicpics/components": "^0.22.3",
+		"@types/js-cookie": "^3.0.4",
+		"@types/luxon": "^3.3.2",
+		"@types/web": "^0.0.114",
+		"gdpr-cooco-banner": "^0.0.5",
+		"occuplan": "^0.2.1",
+		"svelte": "^4.2.1",
+		"svelte-check": "^3.5.2",
+		"tslib": "^2.6.2",
+		"typescript": "^5.2.2",
+		"vite": "^4.4.11"
+	},
+	"type": "module",
+	"engines": {
+		"node": ">=18 <20"
+	},
+	"dependencies": {
+		"@dinero.js/currencies": "2.0.0-alpha.14",
+		"@fontsource/arizonia": "^5.0.15",
+		"@fontsource/carrois-gothic": "^5.0.8",
+		"@fontsource/raleway": "^5.0.13",
+		"dinero.js": "2.0.0-alpha.14",
+		"js-cookie": "^3.0.5",
+		"luxon": "^3.4.3",
+		"squirrelly": "^9.0.0"
+	}
+}
